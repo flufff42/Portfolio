@@ -1,0 +1,84 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+
+$bodyFont: 'Helvetica', sans-serif
+$displayFont: 'Helvetica Neue', 'Helvetica', sans-serif
+$dark: rgb(40,40,50)
+$bright: rgb(200,220,220)
+$brightHighlight: rgba(200,220,220,0.2)
+
+body
+	font-family: $bodyFont
+	background-color: $dark
+	color: $bright
+	width: 80%
+	margin: 5px auto 5px auto
+	max-width: 1024px
+	min-width: 640px
+	
+@mixin displayText
+	font-family: $displayFont
+	font-weight: 100
+	text-rendering: geometricPrecision
+	letter-spacing: 0.07em /* Ceci n'est pas kerning */
+	
+h1
+	@include displayText
+	font-size: 72pt
+
+h2
+	@include displayText
+	font-size: 48pt
+	
+article
+	margin: 20px 0 0 0
+	border-image: linear-gradient(90deg, $dark, $bright 40%, $dark 60%) 10 300 10 10
+	border-top: 1px solid $bright
+	p
+		line-height: 14pt
+	img
+		margin: 0 auto 0 auto
+		max-width: 100%
+	img.unpadded
+		margin: 30px 0 30px 30px
+
+.icon
+	width: 128px
+	height: 128px
+	float: right
+
+@mixin lozenge
+	border-radius: 5px
+	padding: 2px 3px 0px 3px
+	background: $brightHighlight
+	
+.code
+	font-family: "Consolas", "Menlo", monospace
+	@include lozenge
+a
+	color: $bright
+
+a:visited
+	text-decoration: none
+	color: $bright
+	
+footer
+	margin-top: 50px
+	font-size: smaller
+	
+.button
+	@include lozenge
+	display: inline-block
+	width: 180px
+	text-align: center
+.button:hover
+	background: rgba(200,220,220,0.6)
+	cursor: pointer
+	text-shadow: 1px 1px 10px black
+.badge
+	padding: 10px

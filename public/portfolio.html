@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<hgroup>
+			<h1>Portfolio</h1>
+			<h2>Seán Labastille</h2>
+		</hgroup>
+		<p>Here are some projects I have worked on.</p>
+	</header>
+	<article>
+		<img class="icon" src="images/Brewery Icon.png" alt="Brewery Icon" title="Brewery Icon"/>
+		<h2>Brewery</h2>
+		<p>Brewery is a simple <abbr title="Graphical User Interface">GUI</abbr> for the <span class="code">brew</span> command line utility used to control the <a href="http://brew.sh">homebrew</a> package manager.
+		This was an opportunity for me to experiment with some OS X technologies such as XPC for communicating with a helper process which actually calls <span class="code">brew</span>, as well as binding and array controllers. It also contains a light sprinkling of <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">Reactive Cocoa</a>.</p>
+		<!-- technologies used/code sample -->
+		<img src="images/Brewery Screenshot.png"/><br/>
+		<span class="button">
+		<iframe src="github-btn.html?user=flufff42&repo=Brewery&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="58" height="20"></iframe><br/> the source code from its GitHub repository.
+		</span>
+		
+	</article>
+	<article>
+		<img class="icon" src="images/Journeys Icon.png" alt="Brewery Icon" title="Brewery Icon"/>
+		<h2>Journeys</h2>
+		<p>Journeys is a simple trip planner for public transport in Ireland which grew out of a college project, providing an interface to the National Transport Authority's journey planner service. The app communicates with a RESTful application server written in node.js which passes requests on to the National Transport Authority.</p>
+		<video class="unpadded" autoplay loop width="381px" height="803px" src="images/Journeys - Broadband.m4v"></video><br/>
+		<span class="button">
+		You can find Journeys on the App Store: <a href="https://itunes.apple.com/ie/app/journeys-eire/id637716926?mt=8"><img class="badge" src="images/Download on the App Store.svg" alt="Download on the App Store"/></a>
+		</span>
+		<!-- technologies used/code sample -->
+	</article>
+	
+	<article>
+		
+		<h2>Dublin Live</h2>
+		<p>Dublin Live provides a simple interface to live departure times for Dublin Bus. The site interfaces with a Perl-based backend which handles requests to Dublin Bus. The frontend Javascript is currently being overhauled, however the departures and route schematic tabs should work.</p>
+		<img src="images/Dublin Live Screenshot.png"/><br/>
+		<a href="http://dublin.lsr.li" class="button">
+		Dublin Live online
+		</a>
+		<!-- technologies used/code sample -->
+	</article>
+	
+	<article>
+		
+		<h2>equinux Picture Mails</h2>
+		<p>Formerly <em>Stationery for iPad</em>. I contributed to the initial port of the OS X suite of Mail.app stationeries to an app for the first iPad using iPhone OS 3.2. My main roles related to managing the data model using Core Data and sending messages using SMTP.</p>
+		<img class="unpadded" src="images/Stationery Screenshot.png"/><br/>
+		<span class="button">
+		You can find Picture Mails on the App Store: <a href="https://itunes.apple.com/us/app/magic-mails/id431212868?mt=8&ign-mpt=uo%3D4"><img class="badge" src="images/Download on the App Store.svg" alt="Download on the App Store"/></a>
+		</span>
+		<!-- technologies used/code sample -->
+	</article>
+	
+	<footer>This portfolio was put together using a small node.js server written in CoffeeScript, SASS and Compass for generating stylesheets and handcrafted HTML apart from the <a href="http://ghbtns.com">unofficial GitHub buttons</a>.<!-- The iOS screenshots also use <a href="http://www.teehanlax.com/tools/ios7/">Teehan+Lax iOS 7 GUI</a> which includes the iPhone 5 template.--></footer>
+</body>
+</html>
